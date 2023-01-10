@@ -18,7 +18,7 @@ $tercerColor: blue;
 $cuartoColor: yellow;
 $quintoColor:orange;
 
-
+//  Cuerpo  //
 body{
     font-size: 1.3rem;
 }
@@ -28,6 +28,17 @@ header{
     background: $primerColor;
 }
 
-button{
 
+//  Usando Mixin  //
+@mixin botones{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: $quintoColor;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+button{
+    @include botones;
 }

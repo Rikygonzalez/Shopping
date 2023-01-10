@@ -21,4 +21,13 @@ header {
   width: 100%;
   display: flex;
   background: red;
+}
+
+button {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: orange;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
