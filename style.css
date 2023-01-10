@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.inactive {
+  display: none;
+}
+
+body {
+  font-size: 1.3rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background: red;
+}/*# sourceMappingURL=style.css.map */
