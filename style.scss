@@ -19,19 +19,33 @@ $cuartoColor: yellow;
 $quintoColor:orange;
 
 //  Cuerpo  //
-body{
-    font-size: 1.3rem;
+main{
+    .card{
+        display: flex;
+        display: inline-block;
+        padding: 1rem;
+        margin: 2rem;
+        background: #fff;
+        width: 28rem;
+        img{
+            width: 26rem;
+            border-radius: 3rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        button{
+            margin-top: 1rem;
+
+        }
+    }
 }
-header{
-    width: 100%;
-    display: flex;
-    background: $primerColor;
-}
+
 
 
 //  Usando Mixin  //
 @mixin botones{
-    width: 10rem;
+    width: 12.8rem;
     height: 2.5rem;
     background-color: $quintoColor;
     font-size: 1rem;
