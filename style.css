@@ -16,32 +16,6 @@ html {
 body {
   font-size: 1.3rem;
 }
-<<<<<<< HEAD
-@media (max-width: 600px) {
-  body header {
-    width: 100%;
-    display: flex;
-    background: red;
-    justify-content: space-evenly;
-  }
-  body header .header-logo img {
-    border-radius: 50%;
-    width: 10rem;
-    padding: 0.5rem;
-  }
-  body header .title {
-    display: flex;
-    align-items: center;
-  }
-  body header .header-navbar {
-    display: flex;
-    align-items: center;
-  }
-  body header .header-navbar .icon-hamburger .imagen {
-    width: 2rem;
-    margin: 0.5rem;
-  }
-=======
 body header {
   width: 100%;
   display: flex;
@@ -76,7 +50,6 @@ body header .button-login {
   display: flex;
   align-items: center;
   margin: 1rem;
->>>>>>> ea7118cf0f5be768737f9c2229baf8ed3576017a
 }
 
 main {
