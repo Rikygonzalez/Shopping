@@ -21,6 +21,83 @@ $quintoColor:orange;
 //  Cuerpo  //
 body{
     font-size: 1.3rem;
+    header{
+        width: 100%;
+        display: flex;
+        background: $primerColor;
+        justify-content: space-around;
+        img{
+            border-radius: 50%;
+            width: 10rem;
+            padding: 1rem;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+        }
+        .header-navbar{
+            display: flex;
+            align-items: flex-end;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70rem;
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                list-style: none;
+            }
+        }
+        .button-login{
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+    }
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        display: inline-block;
+        padding: 1rem;
+        margin: 2rem;
+        background: #fff;
+        width: 28rem;
+        img{
+            width: 26rem;
+            border-radius: 3rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        button{
+            margin-top: 1rem;
+
+        }
+    }
+}
+
+
+
+//  Usando Mixin  //
+@mixin botones{
+    width: 12.8rem;
+    height: 2.5rem;
+    background-color: $quintoColor;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+button{
+    @include botones;
+}
 
 @media (max-width: 600px) {
     header{
