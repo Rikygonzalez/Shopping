@@ -13,6 +13,7 @@ html {
   display: none;
 }
 
+<<<<<<< HEAD
 body {
   font-size: 1.3rem;
 }
@@ -40,10 +41,34 @@ body {
     width: 2rem;
     margin: 0.5rem;
   }
+=======
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .card {
+  display: flex;
+  display: inline-block;
+  padding: 1rem;
+  margin: 2rem;
+  background: #fff;
+  width: 28rem;
+}
+main .card img {
+  width: 26rem;
+  border-radius: 3rem;
+}
+main .card p {
+  margin-top: 1rem;
+}
+main .card button {
+  margin-top: 1rem;
+>>>>>>> 728399e82db5b088c20c23b030b09a477c973a18
 }
 
 button {
-  width: 10rem;
+  width: 12.8rem;
   height: 2.5rem;
   background-color: orange;
   font-size: 1rem;

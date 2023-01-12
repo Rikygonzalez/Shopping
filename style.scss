@@ -19,6 +19,7 @@ $cuartoColor: yellow;
 $quintoColor:orange;
 
 //  Cuerpo  //
+<<<<<<< HEAD
 body{
     font-size: 1.3rem;
 
@@ -86,11 +87,38 @@ body{
     // }
 }
 
+=======
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        display: inline-block;
+        padding: 1rem;
+        margin: 2rem;
+        background: #fff;
+        width: 28rem;
+        img{
+            width: 26rem;
+            border-radius: 3rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        button{
+            margin-top: 1rem;
+
+        }
+    }
+}
+>>>>>>> 728399e82db5b088c20c23b030b09a477c973a18
+
 
 
 //  Usando Mixin  //
 @mixin botones{
-    width: 10rem;
+    width: 12.8rem;
     height: 2.5rem;
     background-color: $quintoColor;
     font-size: 1rem;
