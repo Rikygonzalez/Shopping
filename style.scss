@@ -21,12 +21,71 @@ $quintoColor:orange;
 //  Cuerpo  //
 body{
     font-size: 1.3rem;
+
+@media (max-width: 600px) {
+    header{
+        width: 100%;
+        display: flex;
+        background: $primerColor;
+        justify-content: space-evenly;
+        .header-logo{
+            img{
+                border-radius: 50%;
+                width: 10rem;
+                padding: 0.5rem;
+            }
+        }
+        .title{
+            display: flex;
+            align-items: center;
+        }
+        .header-navbar{
+            display: flex;
+            align-items: center;
+            .icon-hamburger{
+                .imagen{    
+                    width: 2rem;
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+    }
+
+    // header{
+    //     width: 100%;
+    //     display: flex;
+    //     background: $primerColor;
+    //     justify-content: space-around;
+    //     img{
+    //         border-radius: 50%;
+    //         width: 10rem;
+    //         padding: 1rem;
+    //     }
+    //     .header-navbar{
+    //         display: flex;
+    //         align-items: flex-end;
+    //     }
+    //     ul{
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: space-between;
+    //         width: 70rem;
+    //         margin-bottom: 1rem;
+    //         a{
+    //             text-decoration: none;
+    //             list-style: none;
+    //         }
+    //     }
+    //     .button-login{
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: flex-end;
+    //         margin: 1rem;
+    //     }
+    // }
 }
-header{
-    width: 100%;
-    display: flex;
-    background: $primerColor;
-}
+
 
 
 //  Usando Mixin  //
