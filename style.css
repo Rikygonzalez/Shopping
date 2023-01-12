@@ -13,35 +13,45 @@ html {
   display: none;
 }
 
-<<<<<<< HEAD
 body {
   font-size: 1.3rem;
 }
-@media (max-width: 600px) {
-  body header {
-    width: 100%;
-    display: flex;
-    background: red;
-    justify-content: space-evenly;
-  }
-  body header .header-logo img {
-    border-radius: 50%;
-    width: 10rem;
-    padding: 0.5rem;
-  }
-  body header .title {
-    display: flex;
-    align-items: center;
-  }
-  body header .header-navbar {
-    display: flex;
-    align-items: center;
-  }
-  body header .header-navbar .icon-hamburger .imagen {
-    width: 2rem;
-    margin: 0.5rem;
-  }
-=======
+body header {
+  width: 100%;
+  display: flex;
+  background: red;
+  justify-content: space-around;
+}
+body header img {
+  border-radius: 50%;
+  width: 10rem;
+  padding: 1rem;
+}
+body header .title {
+  display: flex;
+  align-items: center;
+}
+body header .header-navbar {
+  display: flex;
+  align-items: flex-end;
+}
+body header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70rem;
+  margin-bottom: 1rem;
+}
+body header ul a {
+  text-decoration: none;
+  list-style: none;
+}
+body header .button-login {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;
@@ -64,7 +74,6 @@ main .card p {
 }
 main .card button {
   margin-top: 1rem;
->>>>>>> 728399e82db5b088c20c23b030b09a477c973a18
 }
 
 button {
@@ -74,4 +83,30 @@ button {
   font-size: 1rem;
   border-radius: 1rem;
   border: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    display: flex;
+    background: red;
+    justify-content: space-evenly;
+  }
+  header .header-logo img {
+    border-radius: 50%;
+    width: 10rem;
+    padding: 0.5rem;
+  }
+  header .title {
+    display: flex;
+    align-items: center;
+  }
+  header .header-navbar {
+    display: flex;
+    align-items: center;
+  }
+  header .header-navbar .icon-hamburger .imagen {
+    width: 2rem;
+    margin: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
