@@ -13,6 +13,11 @@ html {
   display: none;
 }
 
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 main .card {
   display: flex;
   display: inline-block;

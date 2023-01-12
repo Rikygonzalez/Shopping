@@ -20,6 +20,9 @@ $quintoColor:orange;
 
 //  Cuerpo  //
 main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     .card{
         display: flex;
         display: inline-block;
