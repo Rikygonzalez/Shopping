@@ -13,69 +13,6 @@ html {
   display: none;
 }
 
-body {
-  font-size: 1.3rem;
-}
-body header {
-  width: 100%;
-  display: flex;
-  background: red;
-  justify-content: space-around;
-}
-body header img {
-  border-radius: 50%;
-  width: 10rem;
-  padding: 1rem;
-}
-body header .title {
-  display: flex;
-  align-items: center;
-}
-body header .header-navbar {
-  display: flex;
-  align-items: flex-end;
-}
-body header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70rem;
-  margin-bottom: 1rem;
-}
-body header ul a {
-  text-decoration: none;
-  list-style: none;
-}
-body header .button-login {
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-}
-
-main {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-main .card {
-  display: flex;
-  display: inline-block;
-  padding: 1rem;
-  margin: 2rem;
-  background: #fff;
-  width: 28rem;
-}
-main .card img {
-  width: 26rem;
-  border-radius: 3rem;
-}
-main .card p {
-  margin-top: 1rem;
-}
-main .card button {
-  margin-top: 1rem;
-}
-
 button {
   width: 12.8rem;
   height: 2.5rem;
@@ -85,28 +22,144 @@ button {
   border: none;
 }
 
-@media (max-width: 600px) {
-  header {
-    width: 100%;
-    display: flex;
-    background: red;
-    justify-content: space-evenly;
+body {
+  font-size: 1.3rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background: green;
+  justify-content: space-around;
+}
+header .icon-hamburger {
+  display: flex;
+  align-items: center;
+}
+header .icon-hamburger .imagen {
+  display: flex;
+  width: 2rem;
+  margin: 0.5rem;
+}
+header .header-logo img {
+  border-radius: 50%;
+  width: 5rem;
+  padding: 0.5rem;
+}
+header .header-navbar {
+  display: none;
+  align-items: center;
+}
+header .header-navbar ul {
+  display: none;
+}
+header .button-login {
+  display: flex;
+  align-items: center;
+}
+header .button-login .header-login {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: orange;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.footer-container {
+  background-color: green;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 32rem;
+  justify-content: center;
+  row-gap: 20px;
+}
+.footer-container form input {
+  border: none;
+  border-radius: 50px;
+  height: 3.5rem;
+  padding: 1rem;
+}
+.footer-container form button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: orange;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+.footer-container .box-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-container .box-list .list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px 15px 50px;
+  list-style: none;
+}
+.footer-container .box-icon .icon img {
+  width: 2rem;
+}
+.footer-container .box-icon .box-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.footer-container .box-icon .box-logo img {
+  width: 7rem;
+  border-radius: 50%;
+}
+.footer-container .copyright {
+  margin-top: 300px;
+  position: absolute;
+  right: 100px;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.3rem;
   }
-  header .header-logo img {
-    border-radius: 50%;
-    width: 10rem;
-    padding: 0.5rem;
-  }
-  header .title {
+  body .header-navbar {
     display: flex;
     align-items: center;
   }
-  header .header-navbar {
-    display: flex;
-    align-items: center;
+  body .header-navbar .icon-hamburger {
+    display: none;
   }
-  header .header-navbar .icon-hamburger .imagen {
+  body .header-navbar .icon-hamburger .imagen {
+    display: flex;
     width: 2rem;
     margin: 0.5rem;
+  }
+  body .header-navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  body main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  body main .card {
+    display: flex;
+    display: inline-block;
+    padding: 1rem;
+    margin: 2rem;
+    background: #fff;
+    width: 28rem;
+  }
+  body main .card img {
+    width: 26rem;
+    border-radius: 3rem;
+  }
+  body main .card p {
+    margin-top: 1rem;
+  }
+  body main .card button {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

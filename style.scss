@@ -18,76 +18,17 @@ $tercerColor: blue;
 $cuartoColor: yellow;
 $quintoColor:orange;
 
-//  Cuerpo  //
-body{
-    font-size: 1.3rem;
-    header{
-        width: 100%;
-        display: flex;
-        background: $primerColor;
-        justify-content: space-around;
-        img{
-            border-radius: 50%;
-            width: 10rem;
-            padding: 1rem;
-        }
-        .title{
-            display: flex;
-            align-items: center;
-        }
-        .header-navbar{
-            display: flex;
-            align-items: flex-end;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 70rem;
-            margin-bottom: 1rem;
-            a{
-                text-decoration: none;
-                list-style: none;
-            }
-        }
-        .button-login{
-            display: flex;
-            align-items: center;
-            margin: 1rem;
-        }
-    }
-}
-
-main{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    .card{
-        display: flex;
-        display: inline-block;
-        padding: 1rem;
-        margin: 2rem;
-        background: #fff;
-        width: 28rem;
-        img{
-            width: 26rem;
-            border-radius: 3rem;
-        }
-        p{
-            margin-top: 1rem;
-        }
-        button{
-            margin-top: 1rem;
-
-        }
-    }
-}
-
-
-
 //  Usando Mixin  //
 @mixin botones{
     width: 12.8rem;
+    height: 2.5rem;
+    background-color: $quintoColor;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+@mixin botones-mobile{
+    width: 8rem;
     height: 2.5rem;
     background-color: $quintoColor;
     font-size: 1rem;
@@ -99,32 +40,147 @@ button{
     @include botones;
 }
 
-@media (max-width: 600px) {
+//  Cuerpo  //
+body{
+    font-size: 1.3rem;
+}
     header{
         width: 100%;
         display: flex;
-        background: $primerColor;
-        justify-content: space-evenly;
+        background: $segundoColor;
+        justify-content: space-around;
+        .icon-hamburger{
+            display: flex;
+            align-items: center;
+            .imagen{
+                display: flex;    
+                width: 2rem;
+                margin: 0.5rem;
+            }
+        }
         .header-logo{
             img{
                 border-radius: 50%;
-                width: 10rem;
+                width: 5rem;
                 padding: 0.5rem;
             }
         }
-        .title{
+        .header-navbar{
+            display: none;
+            align-items: center;
+            ul{
+                display: none;
+            }
+        }
+        .button-login{
             display: flex;
             align-items: center;
+            .header-login{
+                @include botones-mobile;
+            }
         }
+    }
+    
+.footer-container {
+    background-color: green;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    justify-content: center;
+    row-gap: 20px;
+    form {
+        input {
+            border: none;
+            border-radius: 50px;
+            height: 3.5rem;
+            padding: 1rem;
+        }
+        button {
+            @include botones-mobile()
+        }
+    }
+    .box-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .list {
+            display: flex;
+            flex-direction: column;
+            margin: 0 50px 15px 50px;
+            list-style: none;
+        }
+    }
+    .box-icon{
+        .icon{
+            img{
+                width: 2rem;
+            }
+        }
+        .box-logo {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            img{
+                width: 7rem;
+                border-radius: 50%;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 300px;
+        position: absolute;
+        right: 100px;
+    }
+}
+
+
+
+//  Cuerpo  //
+@media (min-width: 600px){
+    body{
+        font-size: 1.3rem;
         .header-navbar{
             display: flex;
             align-items: center;
             .icon-hamburger{
-                .imagen{    
+                display: none;
+                .imagen{
+                    display: flex;    
                     width: 2rem;
                     margin: 0.5rem;
                 }
             }
+            ul{
+                display: flex;
+                list-style: none;
+            }
+        }
+    main{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .card{
+            display: flex;
+            display: inline-block;
+            padding: 1rem;
+            margin: 2rem;
+            background: #fff;
+            width: 28rem;
+            img{
+                width: 26rem;
+                border-radius: 3rem;
+            }
+            p{
+                margin-top: 1rem;
+            }
+            button{
+                margin-top: 1rem;
+    
+            }
         }
     }
 }
+}
+
