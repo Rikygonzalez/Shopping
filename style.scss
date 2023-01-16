@@ -80,7 +80,30 @@ body{
             }
         }
     }
+    main{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .card{
+            display: flex;
+            display: inline-block;
+            padding: 1rem;
+            margin: 2rem;
+            background: #fff;
+            width: 28rem;
+            img{
+                width: 26rem;
+                border-radius: 3rem;
+            }
+            p{
+                margin-top: 1rem;
+            }
+            button{
+                margin-top: 1rem;
     
+            }
+        }
+    }
 .footer-container {
     background-color: green;
     align-items: center;
@@ -129,9 +152,8 @@ body{
         }
     }
     .copyright {
-        margin-top: 300px;
+        margin-top: 30rem;
         position: absolute;
-        right: 100px;
     }
 }
 
@@ -157,30 +179,6 @@ body{
                 list-style: none;
             }
         }
-    main{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        .card{
-            display: flex;
-            display: inline-block;
-            padding: 1rem;
-            margin: 2rem;
-            background: #fff;
-            width: 28rem;
-            img{
-                width: 26rem;
-                border-radius: 3rem;
-            }
-            p{
-                margin-top: 1rem;
-            }
-            button{
-                margin-top: 1rem;
-    
-            }
-        }
     }
-}
 }
 

@@ -66,6 +66,30 @@ header .button-login .header-login {
   border: none;
 }
 
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .card {
+  display: flex;
+  display: inline-block;
+  padding: 1rem;
+  margin: 2rem;
+  background: #fff;
+  width: 28rem;
+}
+main .card img {
+  width: 26rem;
+  border-radius: 3rem;
+}
+main .card p {
+  margin-top: 1rem;
+}
+main .card button {
+  margin-top: 1rem;
+}
+
 .footer-container {
   background-color: green;
   align-items: center;
@@ -114,9 +138,8 @@ header .button-login .header-login {
   border-radius: 50%;
 }
 .footer-container .copyright {
-  margin-top: 300px;
+  margin-top: 30rem;
   position: absolute;
-  right: 100px;
 }
 
 @media (min-width: 600px) {
@@ -138,28 +161,5 @@ header .button-login .header-login {
   body .header-navbar ul {
     display: flex;
     list-style: none;
-  }
-  body main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  body main .card {
-    display: flex;
-    display: inline-block;
-    padding: 1rem;
-    margin: 2rem;
-    background: #fff;
-    width: 28rem;
-  }
-  body main .card img {
-    width: 26rem;
-    border-radius: 3rem;
-  }
-  body main .card p {
-    margin-top: 1rem;
-  }
-  body main .card button {
-    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
