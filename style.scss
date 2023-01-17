@@ -136,6 +136,9 @@ body{
     }
     .box-icon{
         .icon{
+            a{
+                margin-left:2rem;
+            }
             img{
                 width: 2rem;
             }
@@ -197,24 +200,27 @@ body{
                 padding-top: 55px;
             }
             .box-list{
-                column-gap: 40px;
+                column-gap: 4rem;
                 .list{
-                    row-gap: 40px;
+                    row-gap: 4rem;
                 }
             }
             .box-icon{
                 display: flex;
                 flex-direction: column-reverse;
-                gap: 80px;
+                gap: 8rem;
                 margin-top: -4rem;
+                    a{
+                        margin-left: 1rem;
+                    }
                 .box-logo{
-                    margin: 20px;
+                    margin: 2rem;
                 }
             }
             .copyright{
                 position: absolute;
-                margin-top: 150px;
-                right: 100px;
+                margin-top: 15rem;
+                right: 10rem;
             }
         }
     }

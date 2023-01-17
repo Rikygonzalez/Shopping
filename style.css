@@ -124,6 +124,9 @@ main .card button {
   margin: 0 50px 15px 50px;
   list-style: none;
 }
+.footer-container .box-icon .icon a {
+  margin-left: 2rem;
+}
 .footer-container .box-icon .icon img {
   width: 2rem;
 }
@@ -180,24 +183,27 @@ main .card button {
     padding-top: 55px;
   }
   body .footer-container .box-list {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
   body .footer-container .box-list .list {
-    row-gap: 40px;
+    row-gap: 4rem;
   }
   body .footer-container .box-icon {
     display: flex;
     flex-direction: column-reverse;
-    gap: 80px;
+    gap: 8rem;
     margin-top: -4rem;
   }
+  body .footer-container .box-icon a {
+    margin-left: 1rem;
+  }
   body .footer-container .box-icon .box-logo {
-    margin: 20px;
+    margin: 2rem;
   }
   body .footer-container .copyright {
     position: absolute;
-    margin-top: 150px;
-    right: 100px;
+    margin-top: 15rem;
+    right: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */
