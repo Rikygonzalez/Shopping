@@ -163,20 +163,58 @@ body{
 @media (min-width: 600px){
     body{
         font-size: 1.3rem;
+        .icon-hamburger{
+            display: none;
+            .imagen{
+                display: flex;    
+                width: 2rem;
+                margin: 0.5rem;
+            }
+        }
+        .header-logo{
+            img{
+                width: 10rem;
+            }
+        }
         .header-navbar{
             display: flex;
             align-items: center;
-            .icon-hamburger{
-                display: none;
-                .imagen{
-                    display: flex;    
-                    width: 2rem;
-                    margin: 0.5rem;
-                }
-            }
             ul{
                 display: flex;
                 list-style: none;
+                column-gap: 2rem;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .footer-container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            form{
+                align-self: flex-start;
+                padding-top: 55px;
+            }
+            .box-list{
+                column-gap: 40px;
+                .list{
+                    row-gap: 40px;
+                }
+            }
+            .box-icon{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 80px;
+                margin-top: -4rem;
+                .box-logo{
+                    margin: 20px;
+                }
+            }
+            .copyright{
+                position: absolute;
+                margin-top: 150px;
+                right: 100px;
             }
         }
     }

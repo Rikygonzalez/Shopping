@@ -146,20 +146,58 @@ main .card button {
   body {
     font-size: 1.3rem;
   }
-  body .header-navbar {
-    display: flex;
-    align-items: center;
-  }
-  body .header-navbar .icon-hamburger {
+  body .icon-hamburger {
     display: none;
   }
-  body .header-navbar .icon-hamburger .imagen {
+  body .icon-hamburger .imagen {
     display: flex;
     width: 2rem;
     margin: 0.5rem;
   }
+  body .header-logo img {
+    width: 10rem;
+  }
+  body .header-navbar {
+    display: flex;
+    align-items: center;
+  }
   body .header-navbar ul {
     display: flex;
     list-style: none;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  body .header-navbar ul a {
+    text-decoration: none;
+  }
+  body .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  body .footer-container form {
+    align-self: flex-start;
+    padding-top: 55px;
+  }
+  body .footer-container .box-list {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  body .footer-container .box-list .list {
+    row-gap: 40px;
+  }
+  body .footer-container .box-icon {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 80px;
+    margin-top: -4rem;
+  }
+  body .footer-container .box-icon .box-logo {
+    margin: 20px;
+  }
+  body .footer-container .copyright {
+    position: absolute;
+    margin-top: 150px;
+    right: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
