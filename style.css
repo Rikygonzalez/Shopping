@@ -104,6 +104,7 @@ main .card button {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer-container form input {
   border: none;
@@ -197,6 +198,9 @@ main .card button {
   body .footer-container .box-list {
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   body .footer-container .box-list .list {
     row-gap: 4rem;

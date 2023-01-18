@@ -116,6 +116,7 @@ body{
         display: flex;
         column-gap: 2rem;
         align-items: center;
+        flex-wrap: wrap;
         input {
             border: none;
             border-radius: 50px;
@@ -210,6 +211,9 @@ body{
             }
             .box-list{
                 column-gap: 4rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
                 .list{
                     row-gap: 4rem;
                 }
