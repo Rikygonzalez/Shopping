@@ -94,8 +94,8 @@ main .card button {
   background-color: green;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  height: 32rem;
+  flex-wrap: wrap;
+  height: 37rem;
   justify-content: center;
   row-gap: 20px;
 }
@@ -104,12 +104,18 @@ main .card button {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .footer-container form input {
   border: none;
   border-radius: 50px;
   height: 3.5rem;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 .footer-container form button {
   width: 8rem;
@@ -118,17 +124,29 @@ main .card button {
   font-size: 1rem;
   border-radius: 1rem;
   border: none;
+  margin-bottom: 1rem;
 }
-.footer-container .box-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footer-container .box-list .list {
+.footer-container .list {
   display: flex;
   flex-direction: column;
-  margin: 0 50px 15px 50px;
+  row-gap: 1rem;
+  margin: -3rem 5rem 1.5rem 5rem;
   list-style: none;
+  flex-wrap: wrap;
+}
+.footer-container .listuno {
+  margin-top: -5rem;
+}
+.footer-container .box-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 2rem;
+  margin-top: -8rem;
+}
+.footer-container .box-icon .icon {
+  display: flex;
+  justify-content: center;
 }
 .footer-container .box-icon .icon a {
   margin-left: 2rem;
@@ -149,14 +167,10 @@ main .card button {
 .footer-container .copyright {
   margin-top: 30rem;
   position: absolute;
+  display: inline-block;
+  margin-bottom: -5rem;
 }
 
-@media (max-width: 1000px) {
-  .footer-container {
-    justify-content: space-evenly;
-    background-color: aqua;
-  }
-}
 @media (min-width: 600px) {
   body {
     font-size: 1.3rem;
@@ -193,13 +207,13 @@ main .card button {
   body .footer-container form {
     align-self: flex-start;
     padding-top: 5.5rem;
+    margin-top: 1rem;
   }
-  body .footer-container .box-list {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
-  }
-  body .footer-container .box-list .list {
+  body .footer-container .list {
     row-gap: 4rem;
+  }
+  body .footer-container .listuno {
+    margin-top: -5rem;
   }
   body .footer-container .box-icon {
     display: flex;
