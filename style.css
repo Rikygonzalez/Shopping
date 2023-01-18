@@ -99,6 +99,12 @@ main .card button {
   justify-content: center;
   row-gap: 20px;
 }
+.footer-container form {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  align-items: center;
+}
 .footer-container form input {
   border: none;
   border-radius: 50px;
@@ -145,6 +151,12 @@ main .card button {
   position: absolute;
 }
 
+@media (max-width: 1000px) {
+  .footer-container {
+    justify-content: space-evenly;
+    background-color: aqua;
+  }
+}
 @media (min-width: 600px) {
   body {
     font-size: 1.3rem;
@@ -176,11 +188,11 @@ main .card button {
   body .footer-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   body .footer-container form {
     align-self: flex-start;
-    padding-top: 55px;
+    padding-top: 5.5rem;
   }
   body .footer-container .box-list {
     -moz-column-gap: 4rem;
@@ -197,9 +209,6 @@ main .card button {
   }
   body .footer-container .box-icon a {
     margin-left: 1rem;
-  }
-  body .footer-container .box-icon .box-logo {
-    margin: 2rem;
   }
   body .footer-container .copyright {
     position: absolute;

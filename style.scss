@@ -113,6 +113,9 @@ body{
     justify-content: center;
     row-gap: 20px;
     form {
+        display: flex;
+        column-gap: 2rem;
+        align-items: center;
         input {
             border: none;
             border-radius: 50px;
@@ -161,6 +164,12 @@ body{
 }
 
 
+@media (max-width: 1000px){
+    .footer-container{
+        justify-content: space-evenly;
+        background-color: aqua;
+        }
+    }
 
 //  Cuerpo  //
 @media (min-width: 600px){
@@ -194,10 +203,10 @@ body{
         .footer-container{
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-evenly;
+            justify-content: space-around;
             form{
                 align-self: flex-start;
-                padding-top: 55px;
+                padding-top: 5.5rem;
             }
             .box-list{
                 column-gap: 4rem;
@@ -213,9 +222,6 @@ body{
                     a{
                         margin-left: 1rem;
                     }
-                .box-logo{
-                    margin: 2rem;
-                }
             }
             .copyright{
                 position: absolute;
