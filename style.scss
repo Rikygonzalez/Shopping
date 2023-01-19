@@ -53,7 +53,7 @@ body{
             display: flex;
             align-items: center;
             .imagen{
-                display: flex;    
+                display: flex;
                 width: 2rem;
                 margin: 0.5rem;
             }
@@ -100,7 +100,7 @@ body{
             }
             button{
                 margin-top: 1rem;
-    
+
             }
         }
     }
@@ -108,8 +108,9 @@ body{
     background-color: green;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 32rem;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    height: 37rem;
     justify-content: center;
     row-gap: 20px;
     form {
@@ -117,29 +118,48 @@ body{
         column-gap: 2rem;
         align-items: center;
         flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 1rem;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
         input {
             border: none;
             border-radius: 50px;
             height: 3.5rem;
             padding: 1rem;
+            margin-bottom: 1rem;
         }
         button {
-            @include botones-mobile()
+            @include botones-mobile();
+            margin-bottom: 1rem;
         }
     }
-    .box-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    // .box-list{
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
         .list {
             display: flex;
             flex-direction: column;
-            // margin: 0 50px 15px 50px;
+            row-gap: 1rem;
+            margin: -3rem 5rem 1.5rem 5rem;
             list-style: none;
+            flex-wrap: wrap;
         }
-    }
+        .listuno{
+            margin-top: -5rem;
+        }
+    // }
     .box-icon{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+        margin-top: -8rem;
         .icon{
+            display: flex;
+            justify-content: center;
             a{
                 margin-left:2rem;
             }
@@ -161,16 +181,18 @@ body{
     .copyright {
         margin-top: 30rem;
         position: absolute;
+        display: inline-block;
+        margin-bottom: -5rem;
     }
 }
 
 
-@media (max-width: 1000px){
-    .footer-container{
-        justify-content: space-evenly;
-        background-color: aqua;
-        }
-    }
+// @media (max-width: 900px){
+//     .footer-container{
+//         justify-content: space-evenly;
+//         background-color: rgb(78, 20, 20);
+//         }
+//     }
 
 //  Cuerpo  //
 @media (min-width: 600px){
@@ -179,7 +201,7 @@ body{
         .icon-hamburger{
             display: none;
             .imagen{
-                display: flex;    
+                display: flex;
                 width: 2rem;
                 margin: 0.5rem;
             }
@@ -205,36 +227,41 @@ body{
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-around;
+            flex-wrap: unset;
             form{
                 align-self: flex-start;
                 padding-top: 5.5rem;
+                margin-top: 1rem;
+                justify-content: center;
             }
             // .box-list{
-            //     column-gap: 15rem;
-            //     display: flex;
-            //     flex-direction: row;
-            //     justify-content: space-between;
+            //     column-gap: 4rem;
                 .list{
                     row-gap: 4rem;
-                        column-gap: 15rem;
-                       display: flex;
-                       flex-direction: row;
-                         justify-content: space-between;
-                // }
-            }
+                }
+                .listuno{
+                }
+            // }
             .box-icon{
                 display: flex;
                 flex-direction: column-reverse;
                 gap: 8rem;
                 margin-top: -4rem;
+                .icon{
+                    flex-wrap: wrap;
                     a{
-                        margin-left: 1rem;
+                        display: flex;
+                        margin-left: 2rem;
+                        margin-top: 2rem;
                     }
+                }
             }
             .copyright{
                 position: absolute;
                 margin-top: 15rem;
                 right: 10rem;
+                display: flex;
+                justify-content: end;
             }
         }
     }
