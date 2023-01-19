@@ -147,12 +147,10 @@ main .card button {
 }
 .footer-container .box-icon .icon {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.footer-container .box-icon .icon a {
-  margin-left: 2rem;
-}
-.footer-container .box-icon .icon img {
+.footer-container .box-icon .icon a img {
   width: 2rem;
 }
 .footer-container .box-icon .box-logo {
@@ -210,30 +208,39 @@ main .card button {
     align-self: flex-start;
     padding-top: 5.5rem;
     margin-top: 1rem;
+    margin-right: 3rem;
     justify-content: center;
+    max-width: 25%;
   }
   body .footer-container .list {
     row-gap: 4rem;
+    width: 25%;
+    margin: 6rem 0 auto 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   body .footer-container .box-icon {
     display: flex;
     flex-direction: column-reverse;
     gap: 8rem;
     margin-top: -4rem;
+    max-width: 25%;
   }
   body .footer-container .box-icon .icon {
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   body .footer-container .box-icon .icon a {
-    display: flex;
-    margin-left: 2rem;
+    min-width: 5rem;
     margin-top: 2rem;
-  }
-  body .footer-container .copyright {
-    position: absolute;
-    margin-top: 15rem;
-    right: 10rem;
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  body .footer-container .box-icon .box-logo {
+    margin-top: -2rem;
   }
 }/*# sourceMappingURL=style.css.map */

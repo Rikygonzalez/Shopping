@@ -159,13 +159,14 @@ body{
         margin-top: -8rem;
         .icon{
             display: flex;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
             a{
-                margin-left:2rem;
+                img{
+                    width: 2rem;
+                }
             }
-            img{
-                width: 2rem;
-            }
+            
         }
         .box-logo {
             align-items: center;
@@ -232,14 +233,19 @@ body{
                 align-self: flex-start;
                 padding-top: 5.5rem;
                 margin-top: 1rem;
+                margin-right: 3rem;
                 justify-content: center;
+                max-width: 25%;
             }
             // .box-list{
             //     column-gap: 4rem;
                 .list{
                     row-gap: 4rem;
-                }
-                .listuno{
+                    width: 25%;
+                    margin: 6rem 0 auto 0;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
                 }
             // }
             .box-icon{
@@ -247,23 +253,24 @@ body{
                 flex-direction: column-reverse;
                 gap: 8rem;
                 margin-top: -4rem;
+                max-width: 25%;
                 .icon{
                     flex-wrap: wrap;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
                     a{
-                        display: flex;
-                        margin-left: 2rem;
+                        min-width: 5rem;
                         margin-top: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
                     }
                 }
-            }
-            .copyright{
-                position: absolute;
-                margin-top: 15rem;
-                right: 10rem;
-                display: flex;
-                justify-content: end;
+                .box-logo{
+                    margin-top: -2rem;
+                }
             }
         }
     }
 }
-
