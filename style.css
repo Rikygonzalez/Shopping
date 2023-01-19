@@ -128,7 +128,6 @@ main .card button {
 .footer-container .box-list .list {
   display: flex;
   flex-direction: column;
-  margin: 0 50px 15px 50px;
   list-style: none;
 }
 .footer-container .box-icon .icon a {
@@ -195,15 +194,13 @@ main .card button {
     align-self: flex-start;
     padding-top: 5.5rem;
   }
-  body .footer-container .box-list {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
+  body .footer-container .list {
+    row-gap: 4rem;
+    -moz-column-gap: 15rem;
+         column-gap: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  body .footer-container .box-list .list {
-    row-gap: 4rem;
   }
   body .footer-container .box-icon {
     display: flex;

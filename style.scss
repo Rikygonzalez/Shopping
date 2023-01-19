@@ -134,7 +134,7 @@ body{
         .list {
             display: flex;
             flex-direction: column;
-            margin: 0 50px 15px 50px;
+            // margin: 0 50px 15px 50px;
             list-style: none;
         }
     }
@@ -209,14 +209,18 @@ body{
                 align-self: flex-start;
                 padding-top: 5.5rem;
             }
-            .box-list{
-                column-gap: 4rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+            // .box-list{
+            //     column-gap: 15rem;
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-between;
                 .list{
                     row-gap: 4rem;
-                }
+                        column-gap: 15rem;
+                       display: flex;
+                       flex-direction: row;
+                         justify-content: space-between;
+                // }
             }
             .box-icon{
                 display: flex;
