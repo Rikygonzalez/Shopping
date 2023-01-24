@@ -51,15 +51,6 @@ header .header-navbar {
 }
 header .header-navbar ul {
   display: none;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-header .header-navbar ul a {
-  margin: 1rem;
-  color: yellow;
-}
-header .header-navbar ul a:hover {
-  color: #fff;
 }
 header .button-login {
   display: flex;
