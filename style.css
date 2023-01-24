@@ -48,10 +48,18 @@ header .header-logo img {
 }
 header .header-navbar {
   display: none;
-  align-items: center;
 }
 header .header-navbar ul {
   display: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header .header-navbar ul a {
+  margin: 1rem;
+  color: yellow;
+}
+header .header-navbar ul a:hover {
+  color: #fff;
 }
 header .button-login {
   display: flex;
@@ -95,7 +103,7 @@ main .card button {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  height: 37rem;
+  height: 40rem;
   justify-content: center;
   row-gap: 20px;
 }
@@ -194,9 +202,16 @@ main .card button {
     list-style: none;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   body .header-navbar ul a {
     text-decoration: none;
+    margin: 1rem;
+    color: yellow;
+  }
+  body .header-navbar ul a:hover {
+    color: gold;
   }
   body .footer-container {
     display: flex;
@@ -242,5 +257,8 @@ main .card button {
   }
   body .footer-container .box-icon .box-logo {
     margin-top: -2rem;
+  }
+  header {
+    padding: 0 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -67,9 +67,17 @@ body{
         }
         .header-navbar{
             display: none;
-            align-items: center;
             ul{
                 display: none;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                a{
+                    margin: 1rem;
+                    color:$cuartoColor;
+                }
+                a:hover{
+                    color:#fff;
+                }
             }
         }
         .button-login{
@@ -110,7 +118,7 @@ body{
     display: flex;
     // flex-direction: column;
     flex-wrap: wrap;
-    height: 37rem;
+    height: 40rem;
     justify-content: center;
     row-gap: 20px;
     form {
@@ -219,8 +227,15 @@ body{
                 display: flex;
                 list-style: none;
                 column-gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
                 a{
                     text-decoration: none;
+                    margin: 1rem;
+                    color:$cuartoColor;
+                }
+                a:hover{
+                    color:gold;
                 }
             }
         }
@@ -272,5 +287,8 @@ body{
                 }
             }
         }
+    }
+    header{
+        padding: 0 1rem;
     }
 }
