@@ -89,6 +89,13 @@ header .button-login .header-login {
   border-bottom: 0.1rem solid;
 }
 
+.button-login-mobile {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;

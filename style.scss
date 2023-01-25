@@ -103,6 +103,12 @@ body{
             }
         }
     }
+    .button-login-mobile{
+        width: 100%;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+    }
     main{
         display: flex;
         justify-content: space-evenly;
