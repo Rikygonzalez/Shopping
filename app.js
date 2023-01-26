@@ -57,6 +57,7 @@ function hiddenPerfil(){
     if(ocultarPerfil){
         formPerfil.classList.remove("inactive")
         buttonMobileLogin.classList.add("inactive")
+        burgerMobileMenu.classList.add("inactive")
     } else{
         formPerfil.classList.add("inactive")
         buttonMobileLogin.classList.add("inactive")
@@ -70,8 +71,8 @@ function cerrarSesion(){
         account.classList.add("inactive")
         formPerfil.classList.add("inactive")
         buttonLogin.classList.remove("inactive")
+        buttonMobileLogin.classList.add("inactive")
     }
-    buttonMobileLogin.classList.add("inactive")
 }
 
 
