@@ -92,7 +92,7 @@ header .button-login .button-login-mobile form button {
 
 .icon-hamburger-mobile {
   width: 100%;
-  background: grey;
+  background: green;
 }
 .icon-hamburger-mobile ul {
   row-gap: 1rem;
