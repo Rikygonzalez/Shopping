@@ -11,6 +11,7 @@ html {
 
 .inactive {
   display: none;
+  visibility: hidden;
 }
 
 button {
@@ -66,9 +67,8 @@ header .button-login .header-login {
 header .button-login .button-login-mobile {
   background-color: green;
   position: absolute;
-  top: 1.4rem;
+  top: 4.7rem;
   height: 10rem;
-  border: 0.5px solid;
   border-radius: 1rem;
   width: 13rem;
   display: flex;
@@ -253,7 +253,7 @@ main .card button {
     color: gold;
   }
   body .button-login .button-login-mobile {
-    top: 0;
+    top: 8rem;
     height: 10.3rem;
     border: 0px;
   }
