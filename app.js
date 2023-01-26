@@ -1,10 +1,10 @@
 const burgerImage = document.querySelector(".icon-hamburger")
 const burgerMobileMenu = document.querySelector(".icon-hamburger-mobile")
-const buttonSession = document.querySelector(".button-login")
-const buttonMobileSession = document.querySelector(".button-login-mobile")
+const buttonLogin = document.querySelector(".header-login")
+const buttonMobileLogin = document.querySelector(".button-login-mobile")
 
 burgerImage.addEventListener("click", hiddenBurger)
-buttonSession.addEventListener("click", starSession)
+buttonLogin.addEventListener("click", hiddenLogin)
 
 function hiddenBurger() {
     const ocultarHamburgesa = burgerMobileMenu.classList.contains("inactive")
@@ -14,16 +14,18 @@ function hiddenBurger() {
     } else {
         burgerMobileMenu.classList.remove("inactive")
     }
+    buttonMobileLogin.classList.add("inactive")
 }
 
-function starSession() {
-    const ocultarSession = starMobileButton.classList.classList("inactive")
+function hiddenLogin() {
+    const ocultarLogin = buttonMobileLogin.classList.contains("inactive")
 
-    if (!ocultarSession) {
-        starMobileButton.classList.add("inactive")
+    if (!ocultarLogin) {
+        buttonMobileLogin.classList.add("inactive")
     } else {
-        starMobileButton.classList.remove("inactive")
+        buttonMobileLogin.classList.remove("inactive")
     }
+    burgerMobileMenu.classList.add("inactive")
 }
 
 

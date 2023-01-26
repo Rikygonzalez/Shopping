@@ -57,12 +57,37 @@ header .button-login {
   align-items: center;
 }
 header .button-login .header-login {
-  width: 8rem;
   height: 2.5rem;
   background-color: orange;
   font-size: 1rem;
   border-radius: 1rem;
   border: none;
+}
+header .button-login .button-login-mobile {
+  background-color: green;
+  position: absolute;
+  top: 1.4rem;
+  height: 10rem;
+  border: 0.5px solid;
+  border-radius: 1rem;
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .button-login .button-login-mobile form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+header .button-login .button-login-mobile form input {
+  width: 10rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+header .button-login .button-login-mobile form button {
+  width: 10rem;
 }
 
 .icon-hamburger-mobile {
@@ -87,13 +112,6 @@ header .button-login .header-login {
   display: block;
   padding: 3rem;
   border-bottom: 0.1rem solid;
-}
-
-.button-login-mobile {
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
 }
 
 main {
@@ -149,7 +167,6 @@ main .card button {
   margin-bottom: 1rem;
 }
 .footer-container form button {
-  width: 8rem;
   height: 2.5rem;
   background-color: orange;
   font-size: 1rem;
@@ -234,6 +251,11 @@ main .card button {
   }
   body .header-navbar ul a:hover {
     color: gold;
+  }
+  body .button-login .button-login-mobile {
+    top: 0;
+    height: 10.3rem;
+    border: 0px;
   }
   body .footer-container {
     display: flex;
