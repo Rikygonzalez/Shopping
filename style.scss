@@ -102,9 +102,27 @@ body{
                     }
                 }
             }
-            .shop-cart{
-
-            }   
+            .box-account{
+                .form-perfil{
+                    background-color: $segundoColor;
+                    position: absolute;
+                    top: 4.7rem;
+                    height: 8rem;
+                    border-radius: 1rem;
+                    width: 13rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 1rem;
+                    a{
+                        text-decoration: none;
+                    }
+                    .form-btn__perfil{
+                        width: 10rem;
+                    }
+                }
+            }
         }
     }
     .icon-hamburger-mobile{
@@ -277,9 +295,14 @@ body{
         }
         .button-login{
             .button-login-mobile{
-                top: 8rem;
+                top: 7rem;
                 height: 10.3rem;
                 border: 0px ;
+            }
+            .box-account{
+                .form-perfil{
+                    top: 7rem;
+                }
             }
         }
         

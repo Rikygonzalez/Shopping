@@ -48,7 +48,6 @@ function hiddenForm(){
     } else {
         burgerMobileMenu.classList.add("inactive")
     }
-    buttonMobileLogin.classList.add("inactive")
 }
 
 function hiddenPerfil(){
