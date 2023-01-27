@@ -133,6 +133,26 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   border-bottom: 0.1rem solid;
 }
 
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border: 0.1rem solid;
+}
+.perfil img {
+  margin: 2rem;
+}
+.perfil form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.perfil form .button-save {
+  margin-bottom: 2rem;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;

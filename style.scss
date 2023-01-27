@@ -148,6 +148,25 @@ body{
             }
         }
     }
+    .perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        border: 0.1rem solid;
+        img{
+            margin: 2rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 2rem;
+            .button-save{
+                margin-bottom: 2rem;
+            }
+        }
+    }
     main{
         display: flex;
         justify-content: space-evenly;
