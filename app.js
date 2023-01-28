@@ -9,10 +9,15 @@ const user = document.querySelector(".user")
 const formPerfil = document.querySelector(".form-perfil")
 const btnPerfil = document.querySelector(".form-btn__perfil")
 
-const viewPerfil = document.querySelector(".account-perfil")
 const selectAccount = document.querySelector(".goAccount")
+const viewPerfil = document.querySelector(".account-perfil")
 const editPerfil = document.querySelector(".edit-button")
 const modificatedPerfil = document.querySelector(".perfil")
+const cancelEdit = document.querySelector(".cancel-button")
+
+const homeLogo = document.querySelector(".header-logo")
+
+const mainContainer = document.querySelector(".main-container")
 
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
@@ -21,6 +26,36 @@ user.addEventListener("click", hiddenPerfil)
 btnPerfil.addEventListener("click", cerrarSesion)
 selectAccount.addEventListener("click", selectPerfil)
 editPerfil.addEventListener("click", selectEditPerfil)
+cancelEdit.addEventListener("click", cancelEditPerfil)
+homeLogo.addEventListener("click", backHome)
+
+mainContainer.classList.remove("inactive")
+homeLogo.classList.remove("inactive")
+
+function backHome() {
+    const goHome = homeLogo.classList.contains("inactive")
+
+    if (!goHome) {
+        mainContainer.classList.remove("inactive")
+    }
+    viewPerfil.classList.remove("inactive")
+    burgerMobileMenu.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    formPerfil.classList.add("inactive")
+    buttonMobileLogin.classList.add("inactive")
+}
+
+function cancelEditPerfil() {
+    const stopEditPerfil = cancelEdit.classList.contains("inactive")
+
+    if (!stopEditPerfil) {
+        modificatedPerfil.classList.add("inactive")
+    }
+    viewPerfil.classList.remove("inactive")
+    burgerMobileMenu.classList.add("inactive")
+    formPerfil.classList.add("inactive")
+}
 
 function selectEditPerfil() {
     const viewEditPerfil = modificatedPerfil.classList.contains("inactive")
@@ -29,8 +64,9 @@ function selectEditPerfil() {
         modificatedPerfil.classList.remove("inactive")
     }
     viewPerfil.classList.add("inactive")
-    
-
+    mainContainer.classList.add("inactive")
+    burgerMobileMenu.classList.add("inactive")
+    formPerfil.classList.add("inactive")
 }
 
 function selectPerfil() {
@@ -41,6 +77,8 @@ function selectPerfil() {
     }
     viewPerfil.classList.remove("inactive")
     formPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+    mainContainer.classList.add("inactive")
 
 }
 
@@ -100,5 +138,9 @@ function cerrarSesion(){
         formPerfil.classList.add("inactive")
         buttonLogin.classList.remove("inactive")
         buttonMobileLogin.classList.add("inactive")
+        modificatedPerfil.classList.add("inactive")
+        viewPerfil.classList.add("inactive")
+        mainContainer.classList.remove("inactive")
+    
     }
 }
