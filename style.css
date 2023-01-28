@@ -137,20 +137,48 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+}
+.perfil .box-perfil {
   border: 0.1rem solid;
-}
-.perfil img {
+  border-radius: 2rem;
   margin: 2rem;
 }
-.perfil form {
+.perfil .box-perfil .perfil-photo {
+  margin: 2rem 0 0 2rem;
+}
+.perfil .box-perfil form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 2rem;
+  margin: 2rem 2rem 0 2rem;
 }
-.perfil form .button-save {
+.perfil .box-perfil form .button-save {
   margin-bottom: 2rem;
+}
+.perfil .box-perfil form .button-save button {
+  width: 7rem;
+}
+
+.account-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-perfil .account-box-perfil {
+  border: 0.1rem solid;
+  border-radius: 2rem;
+  margin: 2rem;
+  display: flex;
+}
+.account-perfil .account-box-perfil .perfil-photo {
+  margin: 2rem;
+}
+.account-perfil .account-box-perfil .box-information {
+  margin: 2rem;
+}
+.account-perfil .account-box-perfil .box-information p {
+  margin: 0 2rem 1rem 0;
 }
 
 main {

@@ -152,18 +152,45 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
-        border: 0.1rem solid;
-        img{
+        .box-perfil{
+            border: 0.1rem solid;
+            border-radius: 2rem;
             margin: 2rem;
-        }
-        form{
+            .perfil-photo{
+                margin: 2rem 0 0 2rem;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 2rem;
+                margin: 2rem 2rem 0 2rem;
+                .button-save{
+                    margin-bottom: 2rem;
+                    button{
+                        width: 7rem;
+                    }
+                }
+            }
+        }   
+    }
+    .account-perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .account-box-perfil{
+            border: 0.1rem solid;
+            border-radius: 2rem;
+            margin: 2rem;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 2rem;
-            .button-save{
-                margin-bottom: 2rem;
+            .perfil-photo{
+                margin: 2rem;
+            }
+            .box-information{
+                margin: 2rem;
+                p{
+                    margin: 0 2rem 1rem 0;
+                }
             }
         }
     }

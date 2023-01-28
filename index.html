@@ -38,10 +38,10 @@
             <div class="box-account">
                 <div class="account inactive">
                     <label class="user" for="">ejemplo@gmail.com</label>
-                    <img src="./Image/icon_shopping_cart_notification.svg" alt="Carrito">
+                    <img src="./Image/Carrito.jpeg" alt="Carrito">
                 </div>
                 <form class="form-perfil inactive" action="">
-                    <a href="#">Mi cuenta</a>
+                    <a class="goAccount" href="#">Mi cuenta</a>
                     <button class="form-btn__perfil" type="button">Log Out</button>
                 </form>
             </div>
@@ -58,10 +58,10 @@
             <a href=""><li>Politicas de Privacidad</li></a>
         </ul>
     </div>
-    <section class="perfil">
-        <div>
-            <img src="" alt="Foto Perfil">
-            <form action="">
+    <section class="perfil inactive">
+        <div class="box-perfil">
+            <input class="perfil-photo" type="button" id="guardar" value="Seleccionar foto"></input>
+            <form action="" method="get" target="_blank">
                 <input type="text" name="" placeholder="Nombre" required>
                 <input type="text" name="" placeholder="Apellido" required>
                 <input type="date" name="" placeholder="Fecha de nacimiento" required>
@@ -69,12 +69,28 @@
                 <input type="email" name="" placeholder="Correo" required>
                 <div class="button-save">
                     <button type="button">Editar</button>
-                    <input type="button" id="guardar" value="Guardar"></input>    
+                    <button type="button" id="guardar" value="Guardar">Guardar</button>   
+                    <button type="button">Cancelar</button>
                 </div>
             </form>
         </div>
     </section>
-    <main class="inactive">
+    <section class="account-perfil inactive">
+        <div class="account-box-perfil">
+            <div class="perfil-photo">
+                <img src="" alt="Foto de perfil">
+            </div>
+            <div class="box-information">
+                <p>Nombre</p>
+                <p>Apellido</p>
+                <p>Fecha de nacimiento</p>
+                <p>Ciudad</p>
+                <p>Correo</p>
+                <button class="edit-button" type="button">Editar</button>
+            </div>
+        </div>
+    </section>
+    <main>
         <div class="card">
             <img src="https://i.pinimg.com/564x/01/63/37/01633762d0c37edd2eff5f5d89bd0907.jpg" alt="foto mueble">
             <p>Descripcion</p>

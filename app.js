@@ -9,11 +9,40 @@ const user = document.querySelector(".user")
 const formPerfil = document.querySelector(".form-perfil")
 const btnPerfil = document.querySelector(".form-btn__perfil")
 
+const viewPerfil = document.querySelector(".account-perfil")
+const selectAccount = document.querySelector(".goAccount")
+const editPerfil = document.querySelector(".edit-button")
+const modificatedPerfil = document.querySelector(".perfil")
+
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
 formBtn.addEventListener("click", hiddenForm)
 user.addEventListener("click", hiddenPerfil)
 btnPerfil.addEventListener("click", cerrarSesion)
+selectAccount.addEventListener("click", selectPerfil)
+editPerfil.addEventListener("click", selectEditPerfil)
+
+function selectEditPerfil() {
+    const viewEditPerfil = modificatedPerfil.classList.contains("inactive")
+
+    if (viewEditPerfil) {
+        modificatedPerfil.classList.remove("inactive")
+    }
+    viewPerfil.classList.add("inactive")
+    
+
+}
+
+function selectPerfil() {
+    const viewAccount = viewPerfil.classList.contains("inactive")
+    
+    if (!viewAccount) {
+        viewPerfil.classList.add("inactive")
+    }
+    viewPerfil.classList.remove("inactive")
+    formPerfil.classList.add("inactive")
+
+}
 
 function hiddenBurger() {
     const ocultarHamburgesa = burgerMobileMenu.classList.contains("inactive")
