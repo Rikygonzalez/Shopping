@@ -6,7 +6,7 @@ const account = document.querySelector(".account")
 const formBtn = document.querySelector(".form-btn")
 
 const user = document.querySelector(".user")
-const formPerfil = document.querySelector(".form-perfil")
+const formPerfil = document.querySelector(".divPerfil")
 const btnPerfil = document.querySelector(".form-btn__perfil")
 
 const selectAccount = document.querySelector(".goAccount")
@@ -15,7 +15,7 @@ const editPerfil = document.querySelector(".edit-button")
 const modificatedPerfil = document.querySelector(".perfil")
 const cancelEdit = document.querySelector(".cancel-button")
 
-const homeLogo = document.querySelector(".header-logo")
+const headerLogo = document.querySelector(".header-logo")
 
 const mainContainer = document.querySelector(".main-container")
 
@@ -27,24 +27,26 @@ btnPerfil.addEventListener("click", cerrarSesion)
 selectAccount.addEventListener("click", selectPerfil)
 editPerfil.addEventListener("click", selectEditPerfil)
 cancelEdit.addEventListener("click", cancelEditPerfil)
-homeLogo.addEventListener("click", backHome)
+headerLogo.addEventListener("click", home)
 
-mainContainer.classList.remove("inactive")
-homeLogo.classList.remove("inactive")
 
-function backHome() {
-    const goHome = homeLogo.classList.contains("inactive")
+// mainContainer.classList.remove("inactive")
 
-    if (!goHome) {
-        mainContainer.classList.remove("inactive")
-    }
-    viewPerfil.classList.remove("inactive")
-    burgerMobileMenu.classList.add("inactive")
-    modificatedPerfil.classList.add("inactive")
-    viewPerfil.classList.add("inactive")
-    formPerfil.classList.add("inactive")
-    buttonMobileLogin.classList.add("inactive")
+function home(){
+    location.reload()
 }
+
+// function backHome() {
+//     if (goHome) {
+//         mainContainer.classList.remove("inactive")
+//     }
+//     viewPerfil.classList.remove("inactive")
+//     burgerMobileMenu.classList.add("inactive")
+//     modificatedPerfil.classList.add("inactive")
+//     viewPerfil.classList.add("inactive")
+//     formPerfil.classList.add("inactive")
+//     buttonMobileLogin.classList.add("inactive")
+// }
 
 function cancelEditPerfil() {
     const stopEditPerfil = cancelEdit.classList.contains("inactive")

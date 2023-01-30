@@ -9,7 +9,6 @@ html {
 }
 .inactive {
     display: none;
-    visibility: hidden;
 }
 
         // VARIABLES //
@@ -72,8 +71,7 @@ body{
             }
         }
         .button-login{
-            display: flex;
-            align-items: center;
+            margin-top: 1.5rem;
             .header-login{
                 @include botones-mobile;
             }
@@ -84,9 +82,6 @@ body{
                 height: 10rem;
                 border-radius: 1rem;
                 width: 13rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 form{
                     display: flex;
                     flex-direction: column;
@@ -103,6 +98,9 @@ body{
                 }
             }
             .box-account{
+                div{
+
+                }
                 .form-perfil{
                     background-color: $segundoColor;
                     position: absolute;
@@ -149,10 +147,10 @@ body{
         }
     }
     .perfil{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         .box-perfil{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border: 0.1rem solid;
             border-radius: 2rem;
             margin: 2rem;
@@ -177,10 +175,10 @@ body{
         }   
     }
     .account-perfil{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         .account-box-perfil{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border: 0.1rem solid;
             border-radius: 2rem;
             margin: 2rem;
@@ -342,6 +340,7 @@ body{
             }
         }
         .button-login{
+            margin-top: 4rem;
             .button-login-mobile{
                 top: 7rem;
                 height: 10.3rem;

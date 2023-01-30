@@ -11,7 +11,6 @@ html {
 
 .inactive {
   display: none;
-  visibility: hidden;
 }
 
 button {
@@ -54,8 +53,7 @@ header .header-navbar ul {
   display: none;
 }
 header .button-login {
-  display: flex;
-  align-items: center;
+  margin-top: 1.5rem;
 }
 header .button-login .header-login {
   height: 2.5rem;
@@ -71,9 +69,6 @@ header .button-login .button-login-mobile {
   height: 10rem;
   border-radius: 1rem;
   width: 13rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 header .button-login .button-login-mobile form {
   display: flex;
@@ -133,12 +128,10 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   border-bottom: 0.1rem solid;
 }
 
-.perfil {
+.perfil .box-perfil {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.perfil .box-perfil {
   border: 0.1rem solid;
   border-radius: 2rem;
   margin: 2rem;
@@ -162,12 +155,10 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   width: 7rem;
 }
 
-.account-perfil {
+.account-perfil .account-box-perfil {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.account-perfil .account-box-perfil {
   border: 0.1rem solid;
   border-radius: 2rem;
   margin: 2rem;
@@ -320,6 +311,9 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   }
   body .header-navbar ul a:hover {
     color: gold;
+  }
+  body .button-login {
+    margin-top: 4rem;
   }
   body .button-login .button-login-mobile {
     top: 7rem;

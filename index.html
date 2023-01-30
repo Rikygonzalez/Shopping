@@ -12,7 +12,7 @@
         <div class="icon-hamburger">
             <img class="imagen" src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png" alt="icon-menu">
         </div>
-        <div class="header-logo inactive">
+        <div class="header-logo">
             <img src="https://i.pinimg.com/originals/ef/43/33/ef4333e8d9a682ca7e58f64d1c68607e.jpg" alt="Logo">
         </div>
         <nav class="header-navbar">
@@ -40,10 +40,12 @@
                     <label class="user" for="">ejemplo@gmail.com</label>
                     <img src="./Image/Carrito.jpeg" alt="Carrito">
                 </div>
-                <form class="form-perfil inactive" action="">
-                    <a class="goAccount" href="#">Mi cuenta</a>
-                    <button class="form-btn__perfil" type="button">Log Out</button>
-                </form>
+                <div class="divPerfil inactive">
+                    <form class="form-perfil" action="">
+                        <a class="goAccount" href="#">Mi cuenta</a>
+                        <button class="form-btn__perfil" type="button">Log Out</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -70,6 +72,7 @@
                 <p>Ciudad</p>
                 <p>Correo</p>
                 <button class="edit-button" type="button">Editar</button>
+                <button class="cancel-button" type="button">cancelar</button>
             </div>
         </div>
     </section>
@@ -89,7 +92,7 @@
             </form>
         </div>
     </section>
-    <main class="main-container inactive">
+    <main class="main-container">
         <div class="card">
             <img src="https://i.pinimg.com/564x/01/63/37/01633762d0c37edd2eff5f5d89bd0907.jpg" alt="foto mueble">
             <p>Descripcion</p>
