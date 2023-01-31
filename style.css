@@ -179,7 +179,8 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.main-container .card {
+
+.card {
   display: flex;
   display: inline-block;
   padding: 1rem;
@@ -187,14 +188,27 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   background: #fff;
   width: 28rem;
 }
-.main-container .card img {
+.card img {
   width: 26rem;
   border-radius: 3rem;
 }
-.main-container .card p {
+.card p {
   margin-top: 1rem;
 }
-.main-container .card button {
+.card .carrusel {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  justify-content: center;
+}
+.card .carrusel .point {
+  border: 2px solid green;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 30px 3px 15px 3px;
+  width: 1rem;
+}
+.card .carrusel button {
   margin-top: 1rem;
 }
 

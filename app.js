@@ -19,6 +19,8 @@ const headerLogo = document.querySelector(".header-logo")
 
 const mainContainer = document.querySelector(".main-container")
 
+
+
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
 formBtn.addEventListener("click", hiddenForm)
@@ -29,8 +31,6 @@ editPerfil.addEventListener("click", selectEditPerfil)
 cancelEdit.addEventListener("click", cancelEditPerfil)
 headerLogo.addEventListener("click", home)
 
-
-// mainContainer.classList.remove("inactive")
 
 function home(){
     location.reload()
