@@ -203,16 +203,19 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
 }
 .main-container .main-section .card img {
   width: 26rem;
+  height: 40%;
   border-radius: 3rem;
 }
 .main-container .main-section .card p {
   margin-top: 1rem;
 }
-.main-container .main-section .card button {
-  margin-top: 1rem;
+.main-container .main-section .card figure {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .main-container .main-section .card figure img {
-  margin-top: 1rem;
   width: 3rem;
 }
 

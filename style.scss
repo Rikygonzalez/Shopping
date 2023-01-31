@@ -217,17 +217,18 @@ body{
                 width: 28rem;
                 img{
                     width: 26rem;
+                    height: 40%;
                     border-radius: 3rem;
                 }
                 p{
                     margin-top: 1rem;
                 }
-                button{
-                    margin-top: 1rem;
-                }
                 figure{
+                    margin-top: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                     img{
-                        margin-top: 1rem;
                         width:3rem;
                     }
                 }
@@ -369,7 +370,6 @@ body{
                 }
             }
         }
-        
         .footer-container{
             display: flex;
             flex-direction: row-reverse;
