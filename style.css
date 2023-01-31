@@ -188,13 +188,12 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   width: 1rem;
 }
 
-.main-container {
+.main-container .main-section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-.card {
+.main-container .main-section .card {
   display: flex;
   display: inline-block;
   padding: 1rem;
@@ -202,17 +201,17 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
   background: #fff;
   width: 28rem;
 }
-.card img {
+.main-container .main-section .card img {
   width: 26rem;
   border-radius: 3rem;
 }
-.card p {
+.main-container .main-section .card p {
   margin-top: 1rem;
 }
-.card button {
+.main-container .main-section .card button {
   margin-top: 1rem;
 }
-.card figure img {
+.main-container .main-section .card figure img {
   margin-top: 1rem;
   width: 3rem;
 }

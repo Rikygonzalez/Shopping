@@ -204,34 +204,37 @@ body{
             width: 1rem;
         } }
     .main-container{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        }
-        .card{
+        .main-section{
             display: flex;
-            display: inline-block;
-            padding: 1rem;
-            margin: 2rem;
-            background: #fff;
-            width: 28rem;
-            img{
-                width: 26rem;
-                border-radius: 3rem;
-            }
-            p{
-                margin-top: 1rem;
-            }
-            button{
-                margin-top: 1rem;
-            }
-            figure{
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .card{
+                display: flex;
+                display: inline-block;
+                padding: 1rem;
+                margin: 2rem;
+                background: #fff;
+                width: 28rem;
                 img{
+                    width: 26rem;
+                    border-radius: 3rem;
+                }
+                p{
                     margin-top: 1rem;
-                    width:3rem;
+                }
+                button{
+                    margin-top: 1rem;
+                }
+                figure{
+                    img{
+                        margin-top: 1rem;
+                        width:3rem;
+                    }
                 }
             }
         }
+    }
+        
 .footer-container {
     background-color: green;
     align-items: center;

@@ -18,6 +18,7 @@ const cancelEdit = document.querySelector(".cancel-button")
 const headerLogo = document.querySelector(".header-logo")
 
 const mainContainer = document.querySelector(".main-container")
+const mainSection = document.querySelector(".main-section")
 
 
 
@@ -53,10 +54,11 @@ function cancelEditPerfil() {
 
     if (!stopEditPerfil) {
         modificatedPerfil.classList.add("inactive")
+        mainContainer.classList.add("inactive")
     }
     viewPerfil.classList.remove("inactive")
+    mainContainer.classList.add("inactive")
     burgerMobileMenu.classList.add("inactive")
-    formPerfil.classList.add("inactive")
 }
 
 function selectEditPerfil() {
@@ -64,6 +66,7 @@ function selectEditPerfil() {
 
     if (viewEditPerfil) {
         modificatedPerfil.classList.remove("inactive")
+        mainContainer.classList.add("inactive")
     }
     viewPerfil.classList.add("inactive")
     mainContainer.classList.add("inactive")
