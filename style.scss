@@ -191,6 +191,18 @@ body{
             }
         }
     }
+    .carrusel{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: center;
+        .point{
+            border: 2px solid $segundoColor;
+            border-radius: 50%;
+            height: 1rem;
+            margin: 30px 3px 15px 3px;
+            width: 1rem;
+        } }
     .main-container{
         display: flex;
         justify-content: space-evenly;
@@ -210,24 +222,16 @@ body{
             p{
                 margin-top: 1rem;
             }
-            .carrusel{
-                display: flex;
-                width: 100%;
-                overflow-x: scroll;
-                justify-content: center;
-                .point{
-                    border: 2px solid $segundoColor;
-                    border-radius: 50%;
-                    height: 1rem;
-                    margin: 30px 3px 15px 3px;
-                    width: 1rem;
-                }    
             button{
                 margin-top: 1rem;
-
+            }
+            figure{
+                img{
+                    margin-top: 1rem;
+                    width:3rem;
+                }
             }
         }
-    }
 .footer-container {
     background-color: green;
     align-items: center;
