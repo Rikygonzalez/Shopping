@@ -52,17 +52,25 @@ header .header-navbar {
 header .header-navbar ul {
   display: none;
 }
-header .button-login {
+header .header-navbar ul select {
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.button-login {
   margin-top: 1.5rem;
 }
-header .button-login .header-login {
+.button-login .header-login {
   height: 2.5rem;
   background-color: orange;
   font-size: 1rem;
   border-radius: 1rem;
   border: none;
 }
-header .button-login .button-login-mobile {
+.button-login .button-login-mobile {
   background-color: green;
   position: absolute;
   top: 4.7rem;
@@ -70,21 +78,21 @@ header .button-login .button-login-mobile {
   border-radius: 1rem;
   width: 13rem;
 }
-header .button-login .button-login-mobile form {
+.button-login .button-login-mobile form {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   align-items: center;
 }
-header .button-login .button-login-mobile form input {
+.button-login .button-login-mobile form input {
   width: 10rem;
   border-radius: 1rem;
   padding-left: 1rem;
 }
-header .button-login .button-login-mobile form button {
+.button-login .button-login-mobile form button {
   width: 10rem;
 }
-header .button-login .box-account .form-perfil {
+.button-login .box-account .form-perfil {
   background-color: green;
   position: absolute;
   top: 4.7rem;
@@ -97,10 +105,10 @@ header .button-login .box-account .form-perfil {
   flex-direction: column;
   row-gap: 1rem;
 }
-header .button-login .box-account .form-perfil a {
+.button-login .box-account .form-perfil a {
   text-decoration: none;
 }
-header .button-login .box-account .form-perfil .form-btn__perfil {
+.button-login .box-account .form-perfil .form-btn__perfil {
   width: 10rem;
 }
 
@@ -318,6 +326,7 @@ header .button-login .box-account .form-perfil .form-btn__perfil {
     align-items: center;
   }
   body .header-navbar ul {
+    align-items: center;
     display: flex;
     list-style: none;
     -moz-column-gap: 2rem;

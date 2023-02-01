@@ -68,8 +68,14 @@ body{
             display: none;
             ul{
                 display: none;
+                select{
+                    background: transparent;
+                    border: none;
+                    appearance: none;
+                }
             }
         }
+    }
         .button-login{
             margin-top: 1.5rem;
             .header-login{
@@ -119,7 +125,7 @@ body{
                 }
             }
         }
-    }
+    
     .icon-hamburger-mobile{
         width: 100%;
         background: green;
@@ -342,6 +348,7 @@ body{
             display: flex;
             align-items: center;
             ul{
+                align-items: center;
                 display: flex;
                 list-style: none;
                 column-gap: 2rem;
