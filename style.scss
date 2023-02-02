@@ -291,6 +291,17 @@ body{
             background: #999;
         }
         
+        .nosotros-box{
+            h1{
+                display: flex;
+                justify-content: center;
+                margin: 2rem 2rem 0 2rem;
+            }
+            p{
+                margin: 2rem 4rem 2rem 4rem;
+            }
+        }
+        
     .main-container{
         .main-section{
             display: flex;

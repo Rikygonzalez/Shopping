@@ -20,7 +20,9 @@ const headerLogo = document.querySelector(".header-logo")
 const mainContainer = document.querySelector(".main-container")
 const mainSection = document.querySelector(".main-section")
 
-
+const navNosotros = document.querySelector(".nosotros")
+const secNosotros = document.querySelector(".nosotros-container")
+// const carouselContainer = document.querySelector("carousel")
 
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
@@ -31,7 +33,16 @@ selectAccount.addEventListener("click", selectPerfil)
 editPerfil.addEventListener("click", selectEditPerfil)
 cancelEdit.addEventListener("click", cancelEditPerfil)
 headerLogo.addEventListener("click", home)
+navNosotros.addEventListener("click", nosotros)
 
+function nosotros() {   
+    const toNosotros = secNosotros.classList.contains("inactive")
+
+    if (toNosotros) {
+        secNosotros.classList.toggle("inactive")
+    }
+
+}
 
 function home(){
     location.reload()
