@@ -20,8 +20,17 @@ const headerLogo = document.querySelector(".header-logo")
 const mainContainer = document.querySelector(".main-container")
 const mainSection = document.querySelector(".main-section")
 
+const navProductos = document.querySelector(".productos")
+const secProductos = document.querySelector(".productos-container")
+const navOfertas = document.querySelector(".ofertas")
+const secOfertas = document.querySelector(".ofertas-container")
+const navTemporada = document.querySelector(".temporada")
+const secTemporada = document.querySelector(".temporada-container")
 const navNosotros = document.querySelector(".nosotros")
 const secNosotros = document.querySelector(".nosotros-container")
+const navComunidad = document.querySelector(".comunidad")
+const navPoliticas = document.querySelector(".politicas")
+
 // const carouselContainer = document.querySelector("carousel")
 
 burgerImage.addEventListener("click", hiddenBurger)
@@ -34,6 +43,41 @@ editPerfil.addEventListener("click", selectEditPerfil)
 cancelEdit.addEventListener("click", cancelEditPerfil)
 headerLogo.addEventListener("click", home)
 navNosotros.addEventListener("click", nosotros)
+navProductos.addEventListener("click", productos)
+navTemporada.addEventListener("click", temporada)
+navOfertas.addEventListener("click", ofertas)
+
+
+function ofertas() {
+    const toOfertas = secOfertas.classList.contains("inactive")
+
+    if (toOfertas) {
+        secOfertas.classList.toggle("inactive")
+    }
+    mainContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+
+}
+
+function temporada() {
+    const toTemporada = secTemporada.classList.contains("inactive")
+
+    if (toTemporada) {
+        secTemporada.classList.toggle("inactive")
+    }
+    mainContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+}
+
+
+function productos() {
+    const toProductos = secProductos.classList.contains("inactive")
+
+    if (toProductos) {
+        secProductos.classList.toggle("inactive")
+    }
+    mainContainer.classList.add("inactive")
+}
 
 function nosotros() {   
     const toNosotros = secNosotros.classList.contains("inactive")
@@ -41,8 +85,19 @@ function nosotros() {
     if (toNosotros) {
         secNosotros.classList.toggle("inactive")
     }
-
+    mainContainer.classList.add("inactive")
+    secTemporada.classList.add("inactive")
 }
+
+function nosotros() {   
+    const toNosotros = secNosotros.classList.contains("inactive")
+
+    if (toNosotros) {
+        secNosotros.classList.toggle("inactive")
+    }
+    mainContainer.classList.add("inactive")
+}
+
 
 function home(){
     location.reload()

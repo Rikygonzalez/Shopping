@@ -277,15 +277,6 @@ header .header-navbar ul select {
   background: #999;
 }
 
-.nosotros-box h1 {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 2rem 0 2rem;
-}
-.nosotros-box p {
-  margin: 2rem 4rem 2rem 4rem;
-}
-
 .main-container .main-section {
   display: flex;
   justify-content: space-evenly;
@@ -315,6 +306,51 @@ header .header-navbar ul select {
 }
 .main-container .main-section .card figure img {
   width: 3rem;
+}
+
+.ofertas-box h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.ofertas-box p {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.temporada-box h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.temporada-box p {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.nosotros-box h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.nosotros-box p {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.comunidad-box h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.comunidad-box p {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.politicas-box h1 {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 2rem 0 2rem;
+}
+.politicas-box p {
+  margin: 2rem 4rem 2rem 4rem;
 }
 
 .footer-container {
