@@ -184,7 +184,7 @@ header .header-navbar ul select {
 
 /*Este estilo es para el carousel*/
 .categories__title {
-  color: white;
+  color: green;
   font-size: 1.6rem;
   position: absolute;
   padding-left: 3rem;

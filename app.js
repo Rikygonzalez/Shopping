@@ -56,7 +56,7 @@ function ofertas() {
     }
     mainContainer.classList.add("inactive")
     secNosotros.classList.add("inactive")
-
+    secTemporada.classList.add("inactive")
 }
 
 function temporada() {
@@ -66,6 +66,7 @@ function temporada() {
         secTemporada.classList.toggle("inactive")
     }
     mainContainer.classList.add("inactive")
+    secOfertas.classList.add("inactive")
     secNosotros.classList.add("inactive")
 }
 
@@ -77,7 +78,20 @@ function productos() {
         secProductos.classList.toggle("inactive")
     }
     mainContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    secOfertas.classList.toggle("inactive")
 }
+
+// function nosotros() {   
+//     const toNosotros = secNosotros.classList.contains("inactive")
+
+//     if (toNosotros) {
+//         secNosotros.classList.toggle("inactive")
+//     }
+//     mainContainer.classList.add("inactive")
+//     secTemporada.classList.add("inactive")
+//     secOfertas.classList.add("inactive")
+// }
 
 function nosotros() {   
     const toNosotros = secNosotros.classList.contains("inactive")
@@ -87,15 +101,7 @@ function nosotros() {
     }
     mainContainer.classList.add("inactive")
     secTemporada.classList.add("inactive")
-}
-
-function nosotros() {   
-    const toNosotros = secNosotros.classList.contains("inactive")
-
-    if (toNosotros) {
-        secNosotros.classList.toggle("inactive")
-    }
-    mainContainer.classList.add("inactive")
+    secOfertas.classList.add("inactive")
 }
 
 
