@@ -4,6 +4,7 @@ const buttonLogin = document.querySelector(".header-login")
 const buttonMobileLogin = document.querySelector(".button-login-mobile")
 const account = document.querySelector(".account")
 const formBtn = document.querySelector(".form-btn")
+const boxLogo = document.querySelector(".box-logo")
 
 const user = document.querySelector(".user")
 const formPerfil = document.querySelector(".divPerfil")
@@ -15,13 +16,13 @@ const editPerfil = document.querySelector(".edit-button")
 const modificatedPerfil = document.querySelector(".perfil")
 const cancelEdit = document.querySelector(".cancel-button")
 
-const headerLogo = document.querySelector(".header-logo")
 
-const mainContainer = document.querySelector(".main-container")
 const mainSection = document.querySelector(".main-section")
 
+const headerLogo = document.querySelector(".header-logo")
+const carouselContainer = document.querySelector(".carousel")
 const navProductos = document.querySelector(".productos")
-const secProductos = document.querySelector(".productos-container")
+const mainContainer = document.querySelector(".main-container")
 const navOfertas = document.querySelector(".ofertas")
 const secOfertas = document.querySelector(".ofertas-container")
 const navTemporada = document.querySelector(".temporada")
@@ -29,9 +30,10 @@ const secTemporada = document.querySelector(".temporada-container")
 const navNosotros = document.querySelector(".nosotros")
 const secNosotros = document.querySelector(".nosotros-container")
 const navComunidad = document.querySelector(".comunidad")
+const secComunidad = document.querySelector(".comunidad-container")
 const navPoliticas = document.querySelector(".politicas")
+const secPoliticas = document.querySelector(".politicas-container")
 
-// const carouselContainer = document.querySelector("carousel")
 
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
@@ -42,11 +44,61 @@ selectAccount.addEventListener("click", selectPerfil)
 editPerfil.addEventListener("click", selectEditPerfil)
 cancelEdit.addEventListener("click", cancelEditPerfil)
 headerLogo.addEventListener("click", home)
-navNosotros.addEventListener("click", nosotros)
 navProductos.addEventListener("click", productos)
-navTemporada.addEventListener("click", temporada)
 navOfertas.addEventListener("click", ofertas)
+navTemporada.addEventListener("click", temporada)
+navNosotros.addEventListener("click", nosotros)
+navComunidad.addEventListener("click", comunidad)
+navPoliticas.addEventListener("click", politicas)
+boxLogo.addEventListener("click", home)
 
+// function home() {
+//     const toHome = carouselContainer.classList.contains("inactive")
+
+//     if (toHome) {
+//         carouselContainer.classList.toggle("inactive")
+//     }
+//     mainContainer.classList.add("inactive")
+//     secNosotros.classList.add("inactive")
+//     secOfertas.classList.add("inactive")
+//     secTemporada.classList.add("inactive")
+//     secComunidad.classList.add("inactive")
+//     secPoliticas.classList.add("inactive")
+//     viewPerfil.classList.add("inactive")
+// }
+
+function home(){
+    const toHome = carouselContainer.classList.contains("inactive")
+
+    if (toHome) {
+        carouselContainer.classList.remove("inactive")
+    }
+    mainContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+}
+
+
+function productos() {
+    const toProductos = mainContainer.classList.contains("inactive")
+
+    if (toProductos) {
+        mainContainer.classList.toggle("inactive")
+    }
+    carouselContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+}
 
 function ofertas() {
     const toOfertas = secOfertas.classList.contains("inactive")
@@ -54,9 +106,14 @@ function ofertas() {
     if (toOfertas) {
         secOfertas.classList.toggle("inactive")
     }
+    carouselContainer.classList.add("inactive")
     mainContainer.classList.add("inactive")
     secNosotros.classList.add("inactive")
     secTemporada.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
 }
 
 function temporada() {
@@ -65,33 +122,15 @@ function temporada() {
     if (toTemporada) {
         secTemporada.classList.toggle("inactive")
     }
+    carouselContainer.classList.add("inactive")
     mainContainer.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secNosotros.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
 }
-
-
-function productos() {
-    const toProductos = secProductos.classList.contains("inactive")
-
-    if (toProductos) {
-        secProductos.classList.toggle("inactive")
-    }
-    mainContainer.classList.add("inactive")
-    secNosotros.classList.add("inactive")
-    secOfertas.classList.toggle("inactive")
-}
-
-// function nosotros() {   
-//     const toNosotros = secNosotros.classList.contains("inactive")
-
-//     if (toNosotros) {
-//         secNosotros.classList.toggle("inactive")
-//     }
-//     mainContainer.classList.add("inactive")
-//     secTemporada.classList.add("inactive")
-//     secOfertas.classList.add("inactive")
-// }
 
 function nosotros() {   
     const toNosotros = secNosotros.classList.contains("inactive")
@@ -99,27 +138,49 @@ function nosotros() {
     if (toNosotros) {
         secNosotros.classList.toggle("inactive")
     }
+    carouselContainer.classList.add("inactive")
     mainContainer.classList.add("inactive")
     secTemporada.classList.add("inactive")
     secOfertas.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+
 }
 
+function comunidad() {   
+    const toComunidad = secComunidad.classList.contains("inactive")
 
-function home(){
-    location.reload()
+    if (toComunidad) {
+        secComunidad.classList.toggle("inactive")
+    }
+    carouselContainer.classList.add("inactive")
+    mainContainer.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+
 }
 
-// function backHome() {
-//     if (goHome) {
-//         mainContainer.classList.remove("inactive")
-//     }
-//     viewPerfil.classList.remove("inactive")
-//     burgerMobileMenu.classList.add("inactive")
-//     modificatedPerfil.classList.add("inactive")
-//     viewPerfil.classList.add("inactive")
-//     formPerfil.classList.add("inactive")
-//     buttonMobileLogin.classList.add("inactive")
-// }
+function politicas() {   
+    const toPoliticas = secPoliticas.classList.contains("inactive")
+
+    if (toPoliticas) {
+        secPoliticas.classList.toggle("inactive")
+    }
+    carouselContainer.classList.add("inactive")
+    mainContainer.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    viewPerfil.classList.add("inactive")
+    modificatedPerfil.classList.add("inactive")
+}
 
 function cancelEditPerfil() {
     const stopEditPerfil = cancelEdit.classList.contains("inactive")
@@ -144,6 +205,13 @@ function selectEditPerfil() {
     mainContainer.classList.add("inactive")
     burgerMobileMenu.classList.add("inactive")
     formPerfil.classList.add("inactive")
+
+    carouselContainer.classList.add("inactive")
+    secNosotros.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
 }
 
 function selectPerfil() {
@@ -155,8 +223,14 @@ function selectPerfil() {
     viewPerfil.classList.remove("inactive")
     formPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
+    
+    carouselContainer.classList.add("inactive")
     mainContainer.classList.add("inactive")
-
+    secNosotros.classList.add("inactive")
+    secOfertas.classList.add("inactive")
+    secTemporada.classList.add("inactive")
+    secComunidad.classList.add("inactive")
+    secPoliticas.classList.add("inactive")
 }
 
 function hiddenBurger() {

@@ -62,6 +62,7 @@ header .header-navbar ul select {
 
 .button-login {
   margin-top: 1.5rem;
+  z-index: 1;
 }
 .button-login .header-login {
   height: 2.5rem;

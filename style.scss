@@ -78,6 +78,7 @@ body{
     }
         .button-login{
             margin-top: 1.5rem;
+            z-index: 1;
             .header-login{
                 @include botones-mobile;
             }
