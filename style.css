@@ -26,6 +26,9 @@ body {
   font-size: 1.3rem;
 }
 
+/* ------------------------- */
+/*|         HEADER          |*/
+/* ------------------------- */
 header {
   width: 100%;
   display: flex;
@@ -183,7 +186,9 @@ header .header-navbar ul select {
   margin: 0 2rem 1rem 0;
 }
 
-/*Este estilo es para el carousel*/
+/* ------------------------- */
+/*|        CAROUSEL         |*/
+/* ------------------------- */
 .categories__title {
   color: green;
   font-size: 1.6rem;
@@ -278,6 +283,9 @@ header .header-navbar ul select {
   background: #999;
 }
 
+/* ------------------------- */
+/*|          MAIN           |*/
+/* ------------------------- */
 .main-container .main-section {
   display: flex;
   justify-content: space-evenly;

@@ -52,21 +52,6 @@ navComunidad.addEventListener("click", comunidad)
 navPoliticas.addEventListener("click", politicas)
 boxLogo.addEventListener("click", home)
 
-// function home() {
-//     const toHome = carouselContainer.classList.contains("inactive")
-
-//     if (toHome) {
-//         carouselContainer.classList.toggle("inactive")
-//     }
-//     mainContainer.classList.add("inactive")
-//     secNosotros.classList.add("inactive")
-//     secOfertas.classList.add("inactive")
-//     secTemporada.classList.add("inactive")
-//     secComunidad.classList.add("inactive")
-//     secPoliticas.classList.add("inactive")
-//     viewPerfil.classList.add("inactive")
-// }
-
 function home(){
     const toHome = carouselContainer.classList.contains("inactive")
 

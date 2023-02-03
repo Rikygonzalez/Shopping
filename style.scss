@@ -43,6 +43,11 @@ button{
 body{
     font-size: 1.3rem;
 }
+
+/* ------------------------- */
+/*|         HEADER          |*/
+/* ------------------------- */
+
     header{
         width: 100%;
         display: flex;
@@ -211,7 +216,10 @@ body{
     //         width: 1rem;
     //     } }
 
-        /*Este estilo es para el carousel*/
+/* ------------------------- */
+/*|        CAROUSEL         |*/
+/* ------------------------- */
+
         .categories__title {
             color: $segundoColor;
             font-size: 1.6rem;
@@ -292,7 +300,10 @@ body{
             background: #999;
         }
         
-        
+/* ------------------------- */
+/*|          MAIN           |*/
+/* ------------------------- */
+
     .main-container{
         .main-section{
             display: flex;
