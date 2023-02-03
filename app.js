@@ -34,6 +34,8 @@ const secComunidad = document.querySelector(".comunidad-container")
 const navPoliticas = document.querySelector(".politicas")
 const secPoliticas = document.querySelector(".politicas-container")
 
+const carouselCategorias = document.querySelector(".carousel-categorias")
+
 
 burgerImage.addEventListener("click", hiddenBurger)
 buttonLogin.addEventListener("click", hiddenLogin)
