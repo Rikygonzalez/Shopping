@@ -344,13 +344,25 @@ header .header-navbar ul select {
   margin: 2rem 4rem 2rem 4rem;
 }
 
-.comunidad-box h1 {
+.local-box h1 {
   display: flex;
   justify-content: center;
   margin: 2rem 2rem 0 2rem;
 }
-.comunidad-box p {
-  margin: 2rem 4rem 2rem 4rem;
+.local-box div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+  background-color: green;
+  border-radius: 2rem;
+}
+.local-box div div {
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: orange;
+}
+.local-box div div p {
+  margin: 1rem;
 }
 
 .politicas-box h1 {
@@ -360,6 +372,10 @@ header .header-navbar ul select {
 }
 .politicas-box p {
   margin: 2rem 4rem 2rem 4rem;
+  font-size: 1.6rem;
+}
+.politicas-box a {
+  text-decoration: none;
 }
 
 .footer-container {

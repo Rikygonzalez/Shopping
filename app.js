@@ -29,8 +29,8 @@ const navTemporada = document.querySelector(".temporada")
 const secTemporada = document.querySelector(".temporada-container")
 const navNosotros = document.querySelector(".nosotros")
 const secNosotros = document.querySelector(".nosotros-container")
-const navComunidad = document.querySelector(".comunidad")
-const secComunidad = document.querySelector(".comunidad-container")
+const navLocales = document.querySelector(".locales")
+const secLocales = document.querySelector(".local-container")
 const navPoliticas = document.querySelector(".politicas")
 const secPoliticas = document.querySelector(".politicas-container")
 
@@ -50,7 +50,7 @@ navProductos.addEventListener("click", productos)
 navOfertas.addEventListener("click", ofertas)
 navTemporada.addEventListener("click", temporada)
 navNosotros.addEventListener("click", nosotros)
-navComunidad.addEventListener("click", comunidad)
+navLocales.addEventListener("click", locales)
 navPoliticas.addEventListener("click", politicas)
 boxLogo.addEventListener("click", home)
 
@@ -64,7 +64,7 @@ function home(){
     secNosotros.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secTemporada.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
@@ -81,7 +81,7 @@ function productos() {
     secNosotros.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secTemporada.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
@@ -97,7 +97,7 @@ function ofertas() {
     mainContainer.classList.add("inactive")
     secNosotros.classList.add("inactive")
     secTemporada.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
@@ -113,7 +113,7 @@ function temporada() {
     mainContainer.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secNosotros.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
@@ -129,18 +129,18 @@ function nosotros() {
     mainContainer.classList.add("inactive")
     secTemporada.classList.add("inactive")
     secOfertas.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
 
 }
 
-function comunidad() {   
-    const toComunidad = secComunidad.classList.contains("inactive")
+function locales() {   
+    const toLocales = secLocales.classList.contains("inactive")
 
-    if (toComunidad) {
-        secComunidad.classList.toggle("inactive")
+    if (toLocales) {
+        secLocales.classList.toggle("inactive")
     }
     carouselContainer.classList.add("inactive")
     mainContainer.classList.add("inactive")
@@ -163,7 +163,7 @@ function politicas() {
     mainContainer.classList.add("inactive")
     secTemporada.classList.add("inactive")
     secOfertas.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secNosotros.classList.add("inactive")
     viewPerfil.classList.add("inactive")
     modificatedPerfil.classList.add("inactive")
@@ -197,7 +197,7 @@ function selectEditPerfil() {
     secNosotros.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secTemporada.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
 }
 
@@ -216,7 +216,7 @@ function selectPerfil() {
     secNosotros.classList.add("inactive")
     secOfertas.classList.add("inactive")
     secTemporada.classList.add("inactive")
-    secComunidad.classList.add("inactive")
+    secLocales.classList.add("inactive")
     secPoliticas.classList.add("inactive")
 }
 
