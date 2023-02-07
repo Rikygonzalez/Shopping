@@ -34,7 +34,7 @@ const secLocales = document.querySelector(".local-container")
 const navPoliticas = document.querySelector(".politicas")
 const secPoliticas = document.querySelector(".politicas-container")
 
-const carouselCategorias = document.querySelector(".carousel-categorias")
+const carouselCategorias = document.querySelector(".categoria")
 
 
 burgerImage.addEventListener("click", hiddenBurger)
@@ -58,7 +58,7 @@ function home(){
     const toHome = carouselContainer.classList.contains("inactive")
 
     if (toHome) {
-        carouselContainer.classList.remove("inactive")
+        carouselContainer.classList.remove("inactive");
     }
     mainContainer.classList.add("inactive")
     secNosotros.classList.add("inactive")
