@@ -18,6 +18,7 @@ const cancelEdit = document.querySelector(".cancel-button")
 
 
 const mainSection = document.querySelector(".main-section")
+const otro = document.querySelector(".otro")
 
 const headerLogo = document.querySelector(".header-logo")
 const carouselContainer = document.querySelector(".carousel")

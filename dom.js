@@ -48,16 +48,6 @@ renderProducts(productList);
 
 
 
-
-// const api = "https://api.escuelajs.co/api/v1/products/"
-
-// window
-//     .fetch(api)
-//     .then((response) => response.json())
-//     .then(responseJson => {
-//         console.log(responseJson);
-//     })
-
 function categorias(arr) {
     for (product of arr) {
         const productCard = document.createElement('div');
@@ -91,3 +81,30 @@ function categorias(arr) {
 };
 
 categorias(productList);
+
+
+
+const api = 'https://api.storerestapi.com/products'
+
+async function cargarProducts(){
+    const res = await fetch(api)
+    const data = await res.json()
+
+    console.log(data)
+
+    data.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.classList.add('carousel-item');
+    
+    });
+        
+    if(res.status !== 200){
+        spanError.innerHTML = "Hubo un error: " + res.status + data.message;
+    }
+    };
+
+cargarProducts()
+
+
+
+
