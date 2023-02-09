@@ -364,6 +364,15 @@ header .header-navbar ul select {
 .local-box div div p {
   margin: 1rem;
 }
+.local-box div div a {
+  text-decoration: none;
+  margin: 1rem 0 1rem 1rem;
+  color: black;
+}
+.local-box div div iframe {
+  width: 20rem;
+  height: 15rem;
+}
 
 .politicas-box h1 {
   display: flex;
